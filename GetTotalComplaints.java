@@ -22,7 +22,7 @@ public class GetTotalComplaints {
 
         job.setMapperClass(ZipcodeMapper.class);
         job.setReducerClass(GetTotalComplaintsReducer.class);
-        
+
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         job.setNumReduceTasks(1);

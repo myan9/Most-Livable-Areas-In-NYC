@@ -22,7 +22,8 @@ public class GroupComplaintsType {
 
         job.setMapperClass(ZipcodeMapper.class);
         job.setReducerClass(GroupComplaintsTypeReducer.class);
-        
+        job.setNumReduceTasks(1);
+
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         // job.setNumReduceTasks(1);

@@ -14,9 +14,9 @@ import java.lang.Math;
 
 public class ZipcodeMapper extends Mapper<LongWritable, Text, Text, Text> {
   @Override
-  public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {  
+  public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
     String line = value.toString();
-    
+
     String[] tokens = line.split("\\|");
     String zipcode = tokens[0];
     String others = line.substring(6);

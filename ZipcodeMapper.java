@@ -19,8 +19,12 @@ public class ZipcodeMapper extends Mapper<LongWritable, Text, Text, Text> {
 
     String[] tokens = line.split("\\|");
     String zipcode = tokens[0];
-    String others = line.substring(6);
+    String report_data = tokens[1];
+    Integer year = Integer.parseInt(report_data.split("\\/")[2]);
 
-    context.write(new Text(zipcode), new Text(others));
+    if (year >= 2010 && year <= 2016) {
+      String others = line.substring(6);
+      context.write(new Text(zipcode), new Text(others));
+    }
   }
 }

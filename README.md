@@ -1,6 +1,6 @@
 # The Most Livable Areas In New York City
 
-The final report can be found [here](crime-complaints/).
+The final report can be found [here](final-report/Final_report.pdf).
 
 ## Team Members
 

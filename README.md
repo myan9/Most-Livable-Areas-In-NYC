@@ -17,7 +17,6 @@ The dataset includes all valid felony, misdemeanor, and violation crimes reporte
 
 <figure>
 <img src="docs/complaints-dataset.png"style="width:100%">
-<figcaption align = "center"><b>Snippet of NYPD Crime Complaints Dataset</b></figcaption>
 </figure>
 
 
@@ -26,7 +25,6 @@ The dataset includes every arrest in NYC from 2006 to 2021. Each record represen
 
 <figure>
 <img src="docs/arrest.png"style="width:100%">
-<figcaption align = "center"><b>Snippet of NYPD Arrest Dataset</b></figcaption>
 </figure>
 
 
@@ -35,7 +33,6 @@ The dataset includes Airbnb listings from 2010 to 2021.The dataset is 1.8GB, con
 
 <figure>
 <img src="docs/airbnb-data.png"style="width:100%">
-<figcaption align = "center"><b>Snippet of NYPD Arrest Dataset</b></figcaption>
 </figure>
 
 
@@ -45,16 +42,12 @@ The 311 Social service request data is a dataset that has been updating in real 
 
 <figure>
 <img src="docs/311-data.png"style="width:100%">
-<figcaption align = "center"><b>Snippet of NYC 311 Social Service Dataset</b></figcaption>
 </figure>
 
 ## Design Diagram
 
-We used curl to download data and redirected it to HDFS. We used MapReduce for data profiling and data cleaning. Some members used MapReduce more than once to count the total number of complaints and arrests by zipcode. We used Hive to create a table for a cleaned dataset and visualized with tableau. For complaint dataset and arrest dataset, we consolidated results to measure the total safety.
-
 <figure>
 <img src="docs/design-diagram.png"style="width:100%">
-<figcaption align = "center"><b>Design Diagram</b></figcaption>
 </figure>
 
 ## Reverse Geocoding
@@ -72,55 +65,55 @@ Finding the appropriate delimiter for the 311 dataset was a challenge there were
 
 ## Results
 
+Map of Complaints in NYC
 <figure>
 <img src="docs/crime-result.png"style="width:100%">
-<figcaption align = "center"><b>Map of Complaints in NYC</b></figcaption>
 </figure>
 
 
+Map of Arrests in NYC
 <figure>
 <img src="docs/arrest-result.png"style="width:100%">
-<figcaption align = "center"><b>Map of Arrests in NYC</b></figcaption>
 </figure>
 
+Map of Airbnb Prices in NYC
 <figure>
 <img src="docs/airbnb-results.png"style="width:100%">
-<figcaption align = "center"><b>Map of Airbnb Prices in NYC</b></figcaption>
 </figure>
 
+Map of Location Rating in NYC
 <figure>
 <img src="docs/location-result.png"style="width:100%">
-<figcaption align = "center"><b>Map of Location Rating in NYC</b></figcaption>
 </figure>
 
+Map of Noise Requests in NYC
 <figure>
 <img src="docs/noise-result.png"style="width:100%">
-<figcaption align = "center"><b>Map of Noise Requests in NYC</b></figcaption>
 </figure>
 
+Map of Rodent Requests in NYC
 <figure>
 <img src="docs/rodent-result.png"style="width:100%">
-<figcaption align = "center"><b>Map of Rodent Requests in NYC</b></figcaption>
 </figure>
 
+Map of Street Condition Requests in NYC
 <figure>
 <img src="docs/street-condition.png"style="width:100%">
-<figcaption align = "center"><b>Map of Street Condition Requests in NYC</b></figcaption>
 </figure>
 
+Map of Traffic Requests in NYC
 <figure>
 <img src="docs/traffic.png"style="width:100%">
-<figcaption align = "center"><b>Map of Traffic Requests in NYC</b></figcaption>
 </figure>
 
+Ratings of Each Neighborhood in Manhattan
 <figure>
 <img src="docs/rating1.png"style="width:100%">
-<figcaption align = "center"><b>Ratings of Each Neighborhood in Manhattan (1)</b></figcaption>
 </figure>
 
 <figure>
 <img src="docs/rating2.png"style="width:100%">
-<figcaption align = "center"><b>Ratings of Each Neighborhood in Manhattan (2)</b></figcaption>
 </figure>
+
 
 The final report can be found [here](final-report/Final_report.pdf).
